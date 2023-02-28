@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "CF-Daily",
+    "version": "0.1.0",
+    "description": "Codeforces extension to display a daily question for each user in each rating group",
+    "content_scripts": [
+        {
+            "css": [
+                "styles.css"
+            ],
+            "js": [
+                "script.js"
+            ],
+            "matches": [
+                "https://codeforces.com/problemset*"
+            ]
+        }
+    ]
+}

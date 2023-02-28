@@ -1,0 +1,15 @@
+
+.accepted{
+    border-left: 6px solid #D4EDC9;
+}
+.accepted :nth-child(3){
+    background-color: #D4EDC9;
+}
+
+.rejected{
+    border-left: 6px solid #FFE3E3;
+}
+
+.accepted :nth-child(3){
+    background-color: #FFE3E3;
+}
