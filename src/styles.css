@@ -10,6 +10,6 @@
     border-left: 6px solid #FFE3E3;
 }
 
-.accepted :nth-child(3){
+.rejected :nth-child(3){
     background-color: #FFE3E3;
 }
