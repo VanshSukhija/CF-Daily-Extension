@@ -5,6 +5,7 @@ let probs = [];
 let probind = 0;
 
 cal.addEventListener('change', async () => {
+    output.innerHTML = `Loading...`
     let today = new Date();
     let date = today.getDate();
     if (date < 10)
@@ -35,7 +36,6 @@ cal.addEventListener('change', async () => {
         year = parseInt(cal.value.split('-')[0])
         probind = (year + month * date + 1709) % probs.length
 
-        // yha output ki innerHTML me anchor tag dedete h with problem name as the link
         output.innerHTML = `<a href="https://codeforces.com/problemset/problem/${probs[probind].contestId}/${probs[probind].index}" target="_blank">${probs[probind].name}</a>`
     }
 })

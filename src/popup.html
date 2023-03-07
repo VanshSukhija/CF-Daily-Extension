@@ -11,13 +11,15 @@
         * {
             margin: 0;
             padding: 0;
+            text-align: center;
         }
 
         #popupWindow {
-            width: 200px;
+            width: 250px;
             display: flex;
             align-items: center;
             flex-direction: column;
+            font-size: 14px;
         }
 
         #popupWindow div {
@@ -27,7 +29,7 @@
         #icon {
             width: 70%;
             display: flex;
-            justify-content: space-between;
+            justify-content: space-evenly;
             align-items: center;
         }
 
@@ -60,13 +62,13 @@
     <div id="popupWindow">
         <div id="icon">
             <img src="../icons/icon48.png" alt="">
-            <h2>CF-Daily</h2>
+            <span>CF-Daily</span>
         </div>
 
         <div>
             <input type="date" id="potdCalendar">
         </div>
-        <div id="output"></div>
+        <div id="output">Pick a date to see problem of that day</div>
 
         <br><a href="https://codeforces.com/problemset" target="_blank">Solve today's Problem Of The Day</a><br>
 
