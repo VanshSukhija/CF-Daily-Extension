@@ -67,6 +67,8 @@ if (!document.URL.includes('acmsguru')) {
 
         row1.childNodes[2].childNodes[1].innerHTML = `<a href="/problemset/submit/${probs[probind].contestId}/${probs[probind].index}"><img src="https://codeforces.org/s/47998/images/icons/submit-22x22.png" title="Submit" alt="Submit"></a>`
 
+        row1.childNodes[2].removeChild(row1.childNodes[2].lastElementChild)
+
         row1.childNodes[3].innerHTML = `<span title="Difficulty" class="ProblemRating">${probs[probind].rating}</span>`
 
         row1.childNodes[4].innerHTML = `<a title="Participants solved the problem" href="/problemset/status/${probs[probind].contestId}/problem/${probs[probind].index}" style="font-size: 1.1rem"><img style="vertical-align:middle;" src="https://codeforces.org/s/47998/images/icons/user.png">&nbsp;x${probstats[probind].solvedCount}</a>`
