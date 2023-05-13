@@ -30,8 +30,9 @@ if (!document.URL.includes('acmsguru')) {
         await fetch(`https://codeforces.com/api/problemset.problems`)
             .then(response => response.json())
             .then(data => {
+                let recentContestId = data.result.problems[0].contestId;
                 for (let i = 0; i < data.result.problems.length; i++) {
-                    if (('rating' in data.result.problems[i]) && data.result.problems[i].rating <= 2000 && data.result.problems[i].rating >= 1000) {
+                    if (('rating' in data.result.problems[i]) && data.result.problems[i].rating <= 2200 && data.result.problems[i].rating >= 1000 && data.result.problems[i].contestId >= recentContestId-500) {
                         probstats.push(data.result.problemStatistics[i]);
                         probs.push(data.result.problems[i])
                     }
