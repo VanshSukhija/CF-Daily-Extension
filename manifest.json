@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "CF-Daily",
-    "version": "0.1.1",
+    "version": "1.1.1",
     "description": "Codeforces extension to display a daily question for each user in each rating group",
     "content_scripts": [
         {
@@ -25,5 +25,8 @@
         "16": "icons/icon16.png",
         "48": "icons/icon48.png",
         "128": "icons/icon128.png"
-    }
+    },
+    "permissions": [
+        "storage"
+    ]
 }

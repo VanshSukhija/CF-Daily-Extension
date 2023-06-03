@@ -6,71 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CF-Daily</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        #popupWindow {
-            width: 250px;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            font-size: 14px;
-        }
-
-        #popupWindow div {
-            margin: 5%;
-        }
-
-        #icon {
-            width: 70%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        #linksdiv {
-            width: 90%;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }
-
-        #links {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        #icon span {
-            font-size: 20px;
-            font-weight: 700;
-        }
-
-        #output {
-            text-align: center;
-        }
-    </style>
-
+    <link rel="stylesheet" href="popup.css">
 </head>
 
 <body>
     <div id="popupWindow">
         <div id="icon">
-            <img src="../icons/icon48.png" alt="">
+            <img src="../icons/icon48.png" alt="logo">
             <span>CF-Daily</span>
         </div>
 
-        <div>
-            <input type="date" id="potdCalendar">
-        </div>
-        <div id="output">Pick a date to see problem of that day</div>
+        <a href="https://codeforces.com/problemset" target="_blank">Solve today's Problem Of The Day</a><br>
 
-        <br><a href="https://codeforces.com/problemset" target="_blank">Solve today's Problem Of The Day</a><br>
+        <input type="date" id="potdCalendar">
+        <div id="output">Pick a date to see problem of that day</div>
 
         <div id="linksdiv">
             Developed by - Vansh Sukhija
